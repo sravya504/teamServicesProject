@@ -133,11 +133,11 @@ function Login() {
         </form>
 
         <p className="mt-6 text-center text-sm text-gray-200">
-          Don’t have an account?{" "}
-          <a href="/signup" className="text-indigo-400 hover:text-indigo-300">
-            Sign Up
-          </a>
-        </p>
+  Don’t have an account?{" "}
+  <Link to="/signup" className="text-indigo-400 hover:text-indigo-300">
+    Sign Up
+  </Link>
+</p>
       </motion.div>
     </div>
   );
