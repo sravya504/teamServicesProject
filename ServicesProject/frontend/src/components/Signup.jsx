@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import axios from "./Axios_config.js";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
@@ -224,11 +225,11 @@ function SignUp() {
         </form>
 
         <p className="mt-6 text-center text-sm text-gray-200">
-          Already have an account?{" "}
-          <a href="/login" className="text-indigo-400 hover:text-indigo-300">
-            Login
-          </a>
-        </p>
+  Already have an account?{" "}
+  <Link to="/login" className="text-indigo-400 hover:text-indigo-300">
+    Login
+  </Link>
+</p>
       </motion.div>
     </div>
   );

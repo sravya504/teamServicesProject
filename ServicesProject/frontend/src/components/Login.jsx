@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "./Axios_config";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 function Login() {
   const [mobileNumber, setMobileNumber] = useState("");
   const [password, setPassword] = useState("");
