@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import axios from "./Axios_config";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 function Login() {
   const [mobileNumber, setMobileNumber] = useState("");
@@ -134,12 +133,11 @@ function Login() {
         </form>
 
         <p className="mt-6 text-center text-sm text-gray-200">
-  Don’t have an account?{" "}
-  <Link to="/signup" className="text-indigo-400 hover:text-indigo-300">
-    Sign Up
-  </Link>
-</p>
-
+          Don’t have an account?{" "}
+          <a href="/signup" className="text-indigo-400 hover:text-indigo-300">
+            Sign Up
+          </a>
+        </p>
       </motion.div>
     </div>
   );
